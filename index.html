@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Taller de Investigación 2</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Animación de ingreso -->
+  <div class="splash-screen">
+    <h1>?? Bienvenido al Taller de Investigación 2</h1>
+    <button onclick="enter()">Acceder</button>
+    <div class="circles">
+      <div class="circle"></div><div class="circle"></div><div class="circle"></div>
+    </div>
+  </div>
+
+  <!-- Contenido principal oculto al inicio -->
+  <div class="main hidden">
+    <div class="hex-menu">
+      <div class="hex" onclick="showContent('protocolo')">Protocolo</div>
+      <div class="hex" onclick="showContent('desarrollo')">Desarrollo</div>
+      <div class="hex" onclick="showContent('exposicion')">Exposición</div>
+    </div>
+
+    <div class="content-area">
+      <div id="protocolo" class="section hidden">
+        <h2>Simulador de Protocolo</h2>
+        <label>Objetivo específico:</label>
+        <input type="text" id="objetivo" placeholder="Ej. Medir impacto de X..." />
+        <label>Metodología:</label>
+        <textarea id="metodologia" placeholder="Describe la técnica..."></textarea>
+        <button onclick="evaluar()">Evaluar Protocolo</button>
+        <p id="resultado"></p>
+      </div>
+
+      <div id="desarrollo" class="section hidden">
+        <h2>Desarrollo del Proyecto</h2>
+        <p>Contenido en construcción...</p>
+      </div>
+
+      <div id="exposicion" class="section hidden">
+        <h2>Exposición</h2>
+        <p>Aquí podrás cargar tu presentación final.</p>
+      </div>
+    </div>
+  </div>
+
+<script src="main.js"></script>
+</body>
+</html>
