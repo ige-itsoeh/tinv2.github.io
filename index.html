@@ -2,13 +2,15 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Taller de InvestigaciÛn 2</title>
+  <title>Taller de Investigaci√≥n 2</title>
   <link rel="stylesheet" href="styles.css">
+  <a href="https://github.com/ige-itsoeh/tinv2.github.io/edit/main/metodoanim2.html" target="_blank">Animacion</a>
+
 </head>
 <body>
-  <!-- AnimaciÛn de ingreso -->
+  <!-- Animaci√≥n de ingreso -->
   <div class="splash-screen">
-    <h1>?? Bienvenido al Taller de InvestigaciÛn 2</h1>
+    <h1>?? Bienvenido al Taller de Investigaci√≥n 2</h1>
     <button onclick="enter()">Acceder</button>
     <div class="circles">
       <div class="circle"></div><div class="circle"></div><div class="circle"></div>
@@ -20,28 +22,28 @@
     <div class="hex-menu">
       <div class="hex" onclick="showContent('protocolo')">Protocolo</div>
       <div class="hex" onclick="showContent('desarrollo')">Desarrollo</div>
-      <div class="hex" onclick="showContent('exposicion')">ExposiciÛn</div>
+      <div class="hex" onclick="showContent('exposicion')">Exposici√≥n</div>
     </div>
 
     <div class="content-area">
       <div id="protocolo" class="section hidden">
         <h2>Simulador de Protocolo</h2>
-        <label>Objetivo especÌfico:</label>
+        <label>Objetivo espec√≠fico:</label>
         <input type="text" id="objetivo" placeholder="Ej. Medir impacto de X..." />
-        <label>MetodologÌa:</label>
-        <textarea id="metodologia" placeholder="Describe la tÈcnica..."></textarea>
+        <label>Metodolog√≠a:</label>
+        <textarea id="metodologia" placeholder="Describe la t√©cnica..."></textarea>
         <button onclick="evaluar()">Evaluar Protocolo</button>
         <p id="resultado"></p>
       </div>
 
       <div id="desarrollo" class="section hidden">
         <h2>Desarrollo del Proyecto</h2>
-        <p>Contenido en construcciÛn...</p>
+        <p>Contenido en construcci√≥n...</p>
       </div>
 
       <div id="exposicion" class="section hidden">
-        <h2>ExposiciÛn</h2>
-        <p>AquÌ podr·s cargar tu presentaciÛn final.</p>
+        <h2>Exposici√≥n</h2>
+        <p>Aqu√≠ podr√°s cargar tu presentaci√≥n final.</p>
       </div>
     </div>
   </div>
